@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+  <!--replace font later-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--jquery-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Title -->
+    <section class="title">
+      <div class="cloudIcon"><img class="aerohiveLogo" src="https://staging-cloud-status.aerohive.com/status/images/aerohive_GOLD.svg"></div>
+      <span class="t">AEROHIVE PUBLIC CLOUD HEALTH STATUS</span>
+      <div class="horizontal-line"></div>
+    </section>
+
+    <!-- Icon legends -->
+    <section class="iconLegend">
+      <ul>
+        <li class="avail"><img class="icons" id='availIcon'
+            src="https://staging-cloud-status.aerohive.com/status/images/statusAVAILABLE.svg"> <span
+            style="vertical-align:middle;">Available</span></li>
+        <li class="pm"><img class="icons" id='mainIcon'
+            src="https://staging-cloud-status.aerohive.com/status/images/statusMAINTENANCE.svg"> <span
+            style="vertical-align:middle;">Planned Maintenance</span></li>
+        <li class="dp"><img class="icons" id='degradIcon'
+            src="https://staging-cloud-status.aerohive.com/status/images/statusDEGRADEDv02.svg"> <span
+            style="vertical-align:middle;">Degraded Performance</span></li>
+        <li class="sd"><img class="icons" id='disruptIcon'
+            src="https://staging-cloud-status.aerohive.com/status/images/statusDISRUPTION.svg"> <span
+            style="vertical-align:middle;">Service Disruption</span></li>
+      </ul>
+    </section>
+
+    <!-- Table -->
+    <section class="cloudStatusTable" id="cloudStatusTable">
+      <table id="secondTable">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Uptime: <br>Last 30 Days</th>
+            <th>Web Services</th>
+            <th>Back End</th>
+            <th>Configuration Push</th>
+            <th>Presence / Location <br>Analytics</th>
+            <th>Authentication</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:center" colspan="100%">
+              <span style="font-size: 48px; color: #FFC007;">
+                <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--EDIT DATE HERE-->
+    </section>
+
+  </div>
+</body>
+<script src="https://cloud-status.aerohive.com/status/index.js"></script>

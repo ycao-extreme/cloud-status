@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Stylesheets -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+  <!--replace font later-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <!-- JavaScript -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--jquery-->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- Title -->
+    <section class="title">
+      <div class="cloudIcon"><img class="aerohiveLogo" src="https://cloud-status.extremecloudiq.com/status/images/Extreme-Networks-E-WH.svg"></div>
+      <span class="t">EXTREME NETWORKS CLOUD HEALTH STATUS</span>
+    </section>
+
+    <section class=map>
+      <img src="https://cloud-status.extremecloudiq.com/status/images/RDC_Map_Feb_2021.png" width="100%">
+    </section>
+
+    <section class="seperate">
+      <!-- <div class="horizontal-line"></div> -->
+    </section>
+
+    <!-- Icon legends -->
+    <section class="iconLegend">
+      <ul>
+        <li class="avail"><img class="icons" id='availIcon'
+            src="https://cloud-status.extremecloudiq.com/status/images/statusAVAILABLE.svg"> <span
+            style="vertical-align:middle;">Available</span></li>
+        <li class="pm"><img class="icons" id='mainIcon'
+            src="https://cloud-status.extremecloudiq.com/status/images/statusMAINTENANCE.svg"> <span
+            style="vertical-align:middle;">Planned Maintenance</span></li>
+        <li class="dp"><img class="icons" id='degradIcon'
+            src="https://cloud-status.extremecloudiq.com/status/images/statusDEGRADEDv02.svg"> <span
+            style="vertical-align:middle;">Degraded Performance</span></li>
+        <li class="sd"><img class="icons" id='disruptIcon'
+            src="https://cloud-status.extremecloudiq.com/status/images/statusDISRUPTION.svg"> <span
+            style="vertical-align:middle;">Service Disruption</span></li>
+      </ul>
+    </section>
+
+    <!-- Table -->
+    <section class="cloudStatusTable" id="cloudStatusTable">
+      <table id="secondTable">
+        <thead>
+          <tr>
+            <th></th>
+            <th>
+              <button type="button" class="btn btn-default iconButton" data-toggle="tooltip" data-placement="top" title="ONBOARD">
+                <img src="https://cloud-status.extremecloudiq.com/status/images/onboard.svg">
+              </button>
+            </th>
+            <th>
+              <button type="button" class="btn btn-default iconButton" data-toggle="tooltip" data-placement="top" title="CONFIGURE">
+                <img src="https://cloud-status.extremecloudiq.com/status/images/configure.svg">
+              </button>
+            </th>
+            <th>
+              <button type="button" class="btn btn-default iconButton" data-toggle="tooltip" data-placement="top" title="MANAGE">
+                <img src="https://cloud-status.extremecloudiq.com/status/images/manage.svg">
+              </button>
+            </th>
+            <th>
+              <button type="button" class="btn btn-default iconButton" data-toggle="tooltip" data-placement="top" title="ML INSIGHTS">
+                <img src="https://cloud-status.extremecloudiq.com/status/images/insights.svg">
+              </button>
+            </th>
+             <th>
+              <button type="button" class="btn btn-default iconButton" data-toggle="tooltip" data-placement="top" title="A3">
+                <img src="https://cloud-status.extremecloudiq.com/status/images/A3.svg">
+              </button>
+            </th>
+            <th>
+              <button type="button" class="btn btn-default iconButton" data-toggle="tooltip" data-placement="top" title="EXTREME IOT">
+                <img src="https://cloud-status.extremecloudiq.com/status/images/defender.svg">
+              </button>
+            </th>
+            <th>
+              <button type="button" class="btn btn-default iconButton" data-toggle="tooltip" data-placement="top" title="EXTREME AIRDEFENCE">
+                <img src="https://cloud-status.extremecloudiq.com/status/images/airDef.svg">
+              </button>
+            </th>
+            <th>
+              <button type="button" class="btn btn-default iconButton" data-toggle="tooltip" data-placement="top" title="EXTREME GUEST">
+                <img src="https://cloud-status.extremecloudiq.com/status/images/EGuestLogo.svg">
+              </button>
+            </th>
+            <th>
+              <button type="button" class="btn btn-default iconButton" data-toggle="tooltip" data-placement="top" title="EXTREME LOCATION">
+                <img src="https://cloud-status.extremecloudiq.com/status/images/locationEssentials.svg">
+              </button>
+            </th>
+            <th>
+               <button type="button" class="btn btn-default iconButton" data-toggle="tooltip" data-placement="top" title="CLOUD PPSK AUTH">
+                <img src="https://cloud-status.extremecloudiq.com/status/images/authentication-2.svg" width="24px" height="24px">
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:center" colspan="100%">
+              <span style="font-size: 48px; color: #3A2C75;">
+                <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--EDIT DATE HERE-->
+    </section>
+
+     <section class="seperate">
+      <!-- <div class="horizontal-line"></div> -->
+    </section>
+
+  </div>
+</body>
+<script src="index.js"></script>

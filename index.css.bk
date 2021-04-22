@@ -1,0 +1,129 @@
+/* ctran */
+
+.container{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* top header */
+.t{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    display:table;
+    margin:0 auto;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.aerohiveLogo{
+    height: 100px;
+}
+
+.title{
+  height: 300px;
+  width: 100%;
+}
+
+.title .horizontal-line{
+  height: 2px;
+  width: 65px;
+  border-radius: 30px;
+  background-color: #333;
+  margin: auto;
+}
+.title .cloudIcon{
+  padding-top: 75px;
+  text-align: center;
+}
+.fa-close, .fa-check-circle-o, .fa-cog, .fa-exclamation-triangle{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.fa-cloud{
+   font-size:80px;
+   color:#e1e4e7;
+   padding-bottom: -15px;
+}
+/* icon legend portion */
+.iconLegend{
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0 0 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.icons{
+  height: 25px;
+  vertical-align: middle;
+}
+
+/* status table */
+.cloudStatusTable{
+  font-size: 14px;
+  height: 925px;
+  width: 100%;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+
+td, th{
+  width: 160px;
+  text-align: center;
+}
+td{
+  font-weight: 300;
+  padding: 17px;
+  border-right: 1px solid #C3C4C7;
+}
+th{
+  font-weight: 700;
+}
+
+table td:first-child{
+  border-right: 1px solid grey;
+  border-bottom: 1px solid white;
+  text-align: right;
+}
+
+table td:last-child{
+  border-right: 1px solid white;
+}
+table tr:last-child{
+  border-bottom: 1px solid #C3C4C7;
+}
+
+.regionTab{
+    background-color: #333;
+    color: #F4F6F9;
+}
+.regionTab label{
+  font-size: 12px;
+  font-weight: 400;
+  float:left;
+  padding-top: 5px;
+}
+
+.dateUpdated{
+    float: right;
+    color: #C3C4C7;
+    font-style: italic;
+    text-transform: none;
+}
